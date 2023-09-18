@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sonal-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 120px;
+            background-color: rgb(3, 3, 55);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(121, 121, 172);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(146, 63, 248);
+            height: 1.2px;
+            margin: 40px 40px;
+
+
+
+        }
+
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+
+            width: 50%;
+            font-size: 2rem;
+            margin: 30px 0;
+
+        }
+
+        .leftsection .btn:hover {
+
+
+            font-size: 1.0rem;
+            color: rgb(121, 121, 172);
+
+        }
+
+        .leftsection .btn {
+
+            background-color: rgb(126, 4, 126);
+
+            padding: 3px 2px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+
+
+
+        }
+
+
+
+
+
+
+
+
+        .rightsection img {
+
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .textgray {
+            color: gray;
+
+        }
+
+        #element {
+            color: blueviolet;
+
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2.5rem;
+
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 84vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 110px;
+
+
+
+
+        }
+
+        .image-top:hover {
+
+            background-color: RoyalBlue;
+            color: rgb(121, 121, 172);
+
+        }
+
+        .image-top {
+            width: 55px;
+            position: relative;
+            top: -35px;
+            left: -28px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 60px;
+            width: 180px;
+            left: -65px;
+            font-size: 25px;
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 14px;
+
+        }
+
+        .footer {
+            background-color: rgb(233, 71, 254);
+            height: 180px;
+            text-align: center;
+            padding: 25px  25px;
+            top: 25px;
+
+
+
+        }
+
+
+
+
+
+        /* .footer {
+            display: flex;
+            justify-content: space-evenly;
+
+
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer>div {
+            width: 120px;
+        } */
+
+        /* .footer .footer-First{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+            height: 15px;
+            top: 15px; */
+
+
+        /* }
+        .footer .footer-second .image-down{
+            position: relative;
+            width: 5px;
+            height: 5px;
+         
+        } */
+
+        .thirdsection {
+            margin: 40px 120px;
+        }
+
+        .thirdsection h1 {
+            font-size: 2.5rem;
+            height: 60px;
+            width: 200px;
+
+        }
+
+        .thirdsection .title {
+            font-size: 1.5rem;
+            font-style: oblique;
+            background-color: rgb(0, 0, 33);
+            position: relative;
+            
+            width: 500px;
+            height: 100px;
+            top: 20px;
+
+
+        }
+
+        .thirdsection .sub-title {
+            font-size: 1.0rem;
+            position: relative;
+            font-style: normal;
+            color: white;
+            top: 15px;
+           
+
+
+        }
+
+        .thirdsection .content {
+            font-size: 1.0rem;
+            position: relative;
+            font-style: normal;
+           
+
+
+
+
+        }
+        .fourthsection {
+            margin: 40px 120px;
+            height: 500px;
+           
+        }
+        .fourthsection h1 {
+            font-size: 2.5rem;
+            height: 70px;
+            width: 200px;
+
+        }
+        .fourthsection .title {
+            font-size: 1.5rem;
+            font-style: oblique;
+            background-color: rgb(0, 0, 33);
+            position: relative;
+            
+            width: 500px;
+            height: 100px;
+            top: 20px;
+
+
+        }
+
+        .fourthsection .sub-title {
+            font-size: 1.0rem;
+            position: relative;
+            font-style: normal;
+            color: white;
+            top: 15px;
+           
+
+
+        }
+
+
+        
+        .fifthsection {
+            margin: 40px 120px;
+            height: 200px;
+        }
+
+        .fifthsection h1 {
+            font-size: 2.5rem;
+            height: 60px;
+            width: 200px;
+
+        }
+
+        
+        .fifthsection .title {
+            font-size: 1.5rem;
+            font-style: oblique;
+            background-color: rgb(0, 0, 33);
+            position: relative;
+            
+            width: 500px;
+            height: 50px;
+           
+        }
+        .fifthsection .sub-title {
+            font-size: 1.0rem;
+            position: relative;
+            font-style: normal;
+            color: white;
+            top: 15px;
+        }
+           
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sonal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Sonal</span> Asthana
+                <div>and I am a Passionate Web Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://1drv.ms/b/s!AhF5epxHL332gVJErZbollo8B1Uy?e=ghY78b">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/Sonalasthana">
+                        <button class="btn">Visit Github
+
+                        </button></a>
+
+
+                </div>
+
+            </div>
+
+            <div class="rightsection">
+                <img src="developer.png">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="textgray"> What I have done so far</span>
+            <h1>Training and Certification</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html css.png" alt=" ">
+                    <div class="vertical-title">
+                        HTML & CSS Certification
+                        <div class="verticle-desc">
+                            By Udemy
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="JavaScript 2.png" alt="">
+                    <div class="vertical-title">
+                        JavaScript Certification
+                        <div class="verticle-desc">
+                            By Udemy
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="J2ee.png.png" alt="">
+                    <div class="vertical-title">
+                        Java Certification
+                        <div class="verticle-desc">
+                            By Shri Balaji Infotech
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png" alt="">
+                    <div class="vertical-title">
+                        Python Bootcamp Certification
+                        <div class="verticle-desc">
+                            By Udemy
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <hr>
+        <section class="thirdsection">
+            <span class="textgray"></span>
+            <h1>Education</h1>
+            <div class="title">Bachleor of Technology
+                <div class="sub-title">
+                    Babu Banarasi Das Institute of Technology and Management
+                    <div class="content">Informaton Technology
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">Intermediate
+                <div class="sub-title">Carmel School
+                </div>`
+
+            </div>
+            <div class="title">High School
+                <div class="sub-title">Carmel School
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="fourthsection">
+            <span class="textgray"></span>
+            <h1>Projects</h1>
+            <div class="title">Registration and Login form 
+                <div class="sub-title">
+                    Using HTML and CSS
+                   
+                </div>
+            </div>
+            <div class="title">Portfolio Website
+                <div class="sub-title">
+                    Using HTML,CSS and JavaScript
+                    
+                </div>
+            </div>
+           
+            <div class="title">CRUD application using ReactJs
+
+                <div class="sub-title">
+                    Using HTML,CSS and JavaScript
+                    
+                </div>
+            </div>
+             <div class="title">Calculator
+                <div class="sub-title">
+                    Using C++
+                    
+                </div>
+            </div>
+            </section>
+            <hr>
+            <section class="fifthsection">
+                <span class="textgray"></span>
+                <h1>Internship</h1>
+                <div class="title">Web Development
+                    <div class="sub-title">
+                       Company - Shiga Trust
+                        <div class="content">4 Months
+                        </div>
+                    </div>
+                </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Sonal's Developer Portfolio </h2>
+            </div>
+            <div class="footer-second">
+                <a href="https://www.linkedin.com/in/sonal-asthana-522785215">
+                    <img class="image-down" src="linked.png" alt="sorry ">  
+                </a>
+
+            </div>
+            <div class="footer-third">
+                www.Sonal's Portfoli.com | All Rights Reserved
+
+            </div>
+        </div>
+    </footer>
+    <!-- <footer>
+        <div class="footer">
+
+        </div>
+        <div class="footer-First">
+            <h2>Sonal's Developer Portfolio</h2>
+        </div>
+        <div class="footer-Second">
+            <img class="image-down" src="linked.png" alt="sorry ">
+            
+        </div>
+    </div>
+
+        <div class="footer-Third">
+            
+        </div>
+        <div class="footer-Fourth">
+            <div class="footer-rights">
+                www.Sonal's Portfoli.com | All Rights Reserved
+            </div>
+        </div>
+
+    </footer> -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'C++ Developer', 'Web Designer', 'Python Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
